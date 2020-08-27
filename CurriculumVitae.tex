@@ -1,0 +1,49 @@
+\documentclass{curriculum}
+\author{Edoardo Giussani}
+
+\usepackage[
+    style=publist,plauthorhandling=highlight,plnumbered=false,
+    url=false,doi=false,isbn=false,eprint=false]
+    {biblatex}
+\plauthorname[Edoardo]{Giussani}
+ 
+\begin{document}
+
+    \name{Edoardo Giussani}
+
+    \contact{Via Dorighello, 1}
+        {35128, Padova (PD)} 
+        {Italy}
+        {edoardo.giussani@outlook.com}
+        {331 3118583}
+
+    \section{Education}
+    \datedsubsection{Evolutionary Biology}{2017-2019}
+        {Università degli Studi di Padova, Padua (Italy)} {Master's degree}
+        Thesis: "Viral load and copy number variation in chronic 
+          lymphoproliferative disorder of NK cells disclosed by custom analyses
+          of exome profiling data"
+
+    \datedsubsection{Environmental sciences and technology}{2012-2016}
+        {Università degli Studi di Padova, Padua (Italy)} {Bachelor's degree}
+        Thesis: "Importanza dell'appetibilità nel fenomeno del "secondary 
+        killing" in tre diverse esche insetticida per il controllo
+        di \textit{Blattella germanica} (Blattodea)"
+
+
+
+    \section{Work experience}
+    \datedsubsection{Temporary research fellow}{02/2020-07/2020}
+    {Dept. Molecular Medicine, Padua}{Full-time}
+        Project: "Study of amplified or deleted genomic regions in chronic 
+        lymphoproliferative disorder of NK cells"
+
+    \datedsubsection{Field and laboratory assistant}{2015-2017}
+    {Entostudio, Ponte San Nicolò}{Stage/Full-time}
+
+    \section{Publications}
+        \newrefsection[biblio.bib]
+            \nocite{*}
+            \printbibliography[heading=none,filter=mine]{}
+
+\end{document}
