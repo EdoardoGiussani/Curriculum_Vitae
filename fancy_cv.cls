@@ -16,7 +16,7 @@
 
 %initialize global paramenters
 \setmainfont{corbel}
-\geometry{paper=a4paper,margin=20mm}
+\geometry{paper=a4paper,margin=20mm,top=15mm}
 \pagenumbering{gobble}
 \setlist{nosep}
 \graphicspath{{images/}}
@@ -27,13 +27,16 @@
     {}
     [\titlerule]
 
-\newcommand{\header}[4]
+
+%Header with name and personal informations
+\newcommand{\header}[5]
 {
     \begin{tabularx}{\textwidth}{lXl}
-        \multirow{3}{*}{\Huge\textbf{#1}} & &
+        \multirow{4}{*}{\Huge\textbf{#1}} & &
+        \ \ \ \ \ \ Birth date: #5 \\ & &
         \includegraphics[align=c,width=10pt]{place.png} #2 \\ & &
         \includegraphics[align=c,width=10pt]{mobile.png} #3 \\ & &
-        \includegraphics[align=c,width=10pt]{email.png} #4
+        \includegraphics[align=c,width=10pt]{email.png} #4 
     \end{tabularx}
 }
 
