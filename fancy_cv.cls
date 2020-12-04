@@ -41,15 +41,15 @@
 }
 
 
-\newcommand{\experience}[5]
+\newcommand{\experience}[6]
 {
     \begin{scshape}
         \noindent
-        {\Large\textbf{#1} \hfill #2}\\
-        {\large#3 \hfill #4}\par
+        {\Large\textbf{#1} \normalsize{#2} \hfill #3}\\
+        {\large#4 \hfill #5}\par
     \end{scshape}
     \begin{adjustwidth}{5pt}{0pt}
-        #5
+        #6
     \end{adjustwidth}
 }
 
