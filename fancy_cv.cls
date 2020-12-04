@@ -16,7 +16,7 @@
 
 %initialize global paramenters
 \setmainfont{corbel}
-\geometry{paper=a4paper,margin=20mm,top=15mm}
+\geometry{paper=a4paper,margin=25mm}
 \pagenumbering{gobble}
 \setlist{nosep}
 \graphicspath{{images/}}
@@ -44,10 +44,11 @@
 \newcommand{\experience}[6]
 {
     \begin{scshape}
-        \noindent
+        \noindent \smallskip
         {\Large\textbf{#1} \normalsize{#2} \hfill #3}\\
         {\large#4 \hfill #5}\par
     \end{scshape}
+    \smallskip
     \begin{adjustwidth}{5pt}{0pt}
         #6
     \end{adjustwidth}
