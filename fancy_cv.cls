@@ -29,14 +29,15 @@
 
 
 %Header with name and personal informations
-\newcommand{\header}[5]
+\newcommand{\header}[6]
 {
     \begin{tabularx}{\textwidth}{lXl}
         \multirow{4}{*}{\Huge\textbf{#1}} & &
-        \ \ \ \ \ \ Birth date: #5 \\ & &
+        \ \ \ \ \ \ Birth date: #6 \\ & &
         \includegraphics[align=c,width=10pt]{place.png} #2 \\ & &
         \includegraphics[align=c,width=10pt]{mobile.png} #3 \\ & &
-        \includegraphics[align=c,width=10pt]{email.png} #4 
+        \includegraphics[align=c,width=10pt]{email.png} #4 \\ & &
+        \includegraphics[align=c,width=10pt]{linkedin.png} #5
     \end{tabularx}
 }
 

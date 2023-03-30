@@ -1,18 +1,20 @@
+% !TEX root = CV_Giussani_Edoardo.tex
+
 \documentclass{fancy_cv}
 \author{Edoardo Giussani}
 
 \usepackage[
-    style=publist,plauthorhandling=highlight,plnumbered=false,
-    url=true,doi=false,isbn=false,eprint=false,sorting=ynt]
+    bibstyle=publist,plauthorhandling=highlight]
     {biblatex}
-\plauthorname[Edoardo]{Giussani}
+\plauthorname{Giussani}
  
 \begin{document}
 
     \header{Edoardo Giussani}
-    {Via Dorighello, 1, \ 35128 Padova (PD), Italy}
+    {Via Fortunato, 45, \ 35125 Padova (PD), Italy}
     {+39 331 311 8583}
-    {edoardo.giussani@outlook.com}
+    {giussaniedoardo@gmail.com}
+    {linkedin.com/in/edoardo-giussani/}
     {05/04/1993}
 
     \section{Education}
@@ -31,15 +33,26 @@
 
 
     \section{Work experience}
+    \experience{Research fellow}{}{02/2021-To date}
+        {Istituto Zooprofilattico Sperimentale delle Venezie, Legnaro}{Full-time}
+        {Field of research: study of viruses of zoonotic interest, mainly avian influenza and SARS-CoV-2.
+        \begin{itemize}
+            \item Pipeline design and development
+            \item Python and Excel scripting
+            \item Data analysis on NGS data
+            \item Workflows optimization 
+        \end{itemize}}
+        \medskip
+
         \experience{Temporary research fellow}{}{02/2020-07/2020}
-            {Dept. Molecular Medicine, Padua}{Full-time}
-            {Project: "Study of amplified or deleted genomic regions in chronic 
-            lymphoproliferative disorder of NK cells"
-            \begin{itemize}
-                \item Programming a custom Python pipeline to perform analyses
-                \item Results reworked with R and spreadsheets
-                \item Enrichment and selection of candidate genes for validation 
-            \end{itemize}}
+        {Dept. Molecular Medicine, Padua}{Full-time}
+        {Project: "Study of amplified or deleted genomic regions in chronic 
+        lymphoproliferative disorder of NK cells"
+        \begin{itemize}
+            \item Developed custom Python pipelines to perform analyses
+            \item Results processed with R and spreadsheets
+            \item Enrichment of genes of interest using KEGG Pathway
+        \end{itemize}}
         \medskip
 
         \experience{Field and laboratory assistant}{}{2015-2017}
@@ -54,20 +67,21 @@
     \section{Personal skills}
         \skill{Digital skills}
             {
-                -\textbf{Excellent:} Microsoft Excel, Word, Power Point and Access \\ &
-                -\textbf{Great:} C\#, Python, VBA, SQL, R, \LaTeX \ and Arduino's language \\ &
-                -\textbf{Basic:} GitHub, SCons and Docker \\ &
-                -Fast learning of new programming languages \\ &
-                -Development in Linux and Windows environment, desktop and server
+                -\textbf{Excellent:} Python, VBA, C\#, Office Suite, Google Suite, Git, GitHub, Conda \\ &
+                -\textbf{Great:} SQL, R, \LaTeX \ and Arduino's language \\ &
+                -\textbf{Basic:} Docker, JavaScript \\ &
+                -Development in Linux and Windows environment, both desktop and server \\ &
+                -Fast and enthusiast learner of new programming languages
             }{5}
         \medskip
 
         \skill{Bioinformatics skills}
             {
-                -Methods development to perform custom analyses on NGS data \\ &
-                -Study of somatic CNVs from WES paired tumor-control samples \\ &
+                -SNP, CNV, Indels analysis on Illumina data \\ &
+                -Analysis of NGS data \\ &
                 -Investigation of viral DNA integration in human genome \\ &
-                -Navigation in principal bioinformatics databases
+                -Navigation in principal bioinformatics databases \\ &
+                -Metagenomic investigations
             }{4}
         \medskip
 
@@ -85,6 +99,6 @@
     \section{Publications}
         \newrefsection[biblio.bib]
             \nocite{*}
-            \printbibliography[heading=none,filter=mine]{}
+            \printbibliography[heading=none]{}
 
 \end{document}
